@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="first.css">
+
+    <link rel="shortcut icon" type="image/x-icon/gif" href="fav/favicon.ico">
+    <title>Zoro Free Anime Streaming Home</title>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- Nav bar Division -->
+    
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img id="logo" src="logo.png"></a>
+
+        <form class="form-inline my-2 my-lg-0" onsubmit="return setvideo(event)">
+            <input class="form-control mr-sm-2" id="textfield" type="search" placeholder="Search" aria-label="Search">
+            <button href="#main3Div" class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit" onclick="getdata(document.getElementById('textfield').value)">Search</button>
+          </form>
+
+          <a class="navbar-brand" href="#"><img class="ml-3" id="logo1" src="1.png"></a>
+          <a class="navbar-brand" href="#"><img id="logo2" src="2.png"></a>
+          <a class="navbar-brand" href="#"><img id="logo3" src="3.png"></a>
+          <a class="navbar-brand" href="#"><img id="logo4" src="4.png"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Explore More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Subbed Anime</a>
+                <a class="dropdown-item" href="#">Dubbed Anime</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Most Popular</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+          </ul>
+          <button type="button" class="btn btn-success">Login</button>
+        </div>
+      </nav>
+
+      <!-- Carousal Division -->
+      <div">
+        <div class="main">
+      <div class="bd-example">
+        <div id="carouselExampleCaptions bs-carousel" class="carousel fade-carousal slide" data-interval="3000" data-ride="carousel">
+          <!-- <ol class="carousel-indicators" style="z-index: 120;">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+            <li data-target="#bs-carousel" data-slide-to="3"></li>
+            <li data-target="#bs-carousel" data-slide-to="4"></li>
+            <li data-target="#bs-carousel" data-slide-to="5"></li>
+            <li data-target="#bs-carousel" data-slide-to="6"></li>
+          </ol> -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="overlay"></div>
+              <img src="chain.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="z-index: 120;">
+                <h1 style="color: bisque;">Chainsaw Man</h1>
+                <p>Denji is a young man trapped in poverty, working off his deceased father's debt to the yakuza by working as a Devil Hunter, aided by Pochita, his canine companion and Chainsaw Devil. Denji is betrayed by the yakuza, who kill him for a contract with the Zombie Devil. Pochita makes a contract with Denji, merging with him as a human-devil Hybrid, under the condition that Denji shows his dreams to Pochita. </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="naruto.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="z-index: 120;">
+                <h1 style="color: bisque;">Naruto : Shippuden</h1>
+                <p>A powerful fox known as the Nine-Tails attacks Konoha, the hidden leaf village in the Land of Fire, one of the Five Great Shinobi Countries in the Ninja World. In response, the leader of Konoha and the Fourth Hokage, Minato Namikaze seals the fox inside the body of his newborn son, Naruto Uzumaki, making Naruto a host of the beast;[i] this costs Naruto's father his life, and the Third Hokage returns from retirement to become the leader of Konoha again.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="onepiece.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="z-index: 120;">
+                <h1 style="color: bisque;">One-Piece</h1>
+                <p>The series focuses on Monkey D. Luffy, a young man made of rubber, who, inspired by his childhood idol, the powerful pirate Red-Haired Shanks, sets off on a journey from the East Blue Sea to find the mythical treasure, the One Piece, and proclaim himself the King of the Pirates. In an effort to organize his own crew, the Straw Hat Pirates,[Jp 1] Luffy rescues and befriends a pirate hunter and swordsman named Roronoa Zoro, and they head off in search of the titular treasure.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="tokyogh.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="z-index: 120;">
+                <h1 style="color: bisque;">Tokyo Ghoul</h1>
+                <p>The story follows Ken Kaneki, a student who barely survives a deadly encounter with Rize Kamishiro, his date who reveals herself as a ghoul and tries to eat him. He is taken to the hospital in critical condition. After recovering, Kaneki discovers that he underwent a surgery that transformed him into a half-ghoul. This was accomplished because some of Rize's organs were transferred into his body, and now, like normal ghouls, he must consume human flesh to survive.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="dororo.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="z-index: 120;">
+                <h1 style="color: bisque;">Dororo</h1>
+                <p>Dororo revolves around a rōnin named Hyakkimaru (百鬼丸) and young orphaned thief named Dororo (どろろ) during the Sengoku period. The rōnin was born malformed, limbless and without facial features or internal organs. This was the result of his birth father daimyō Kagemitsu Daigō forging a pact with 48 sealed demons so that he might rule the land and increase its wealth and prosperity.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="demon.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="z-index: 120;">
+                <h1 style="color: bisque;">Demon-Slayer</h1>
+                <p>Tanjiro Kamado is a kind-hearted and intelligent boy who lives with his family in the mountains. He became his family's breadwinner after his father's death, making trips to the nearby village to sell charcoal. Everything changed when he came home one day to discover that his family was attacked and slaughtered by a demon.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="bc.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="z-index: 120;">
+                <h1 style="color: bisque;">Dragon Ball Z</h1>
+                <p>The series begins with a young monkey-tailed boy named Goku befriending a teenage girl named Bulma. Together, they go on an adventure to find the seven mystical Dragon Balls (ドラゴンボール), which have the ability to summon the powerful dragon Shenron, who can grant whomever summons him their greatest desire. The journey leads to a confrontation with the shape-shifting pig Oolong, as well as a desert bandit named Yamcha and his companion Pu'ar, who all later become allies; Chi-Chi, whom Goku unknowingly agrees to marry;</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="pc.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="z-index: 120;">
+                <h1 style="color: bisque;">Pokemon</h1>
+                <p>Ash Ketchum is 10 years old and lives in Pallet town, he is ready to start his journey in the world of Pokémon and dreams of becoming a Pokémon master, but on the day he is to receive his first Pokémon, Ash oversleeps and wakes up in a panic, running into Gary Oak, who becomes Ash's rival. Professor Oak, the local Pokémon researcher, has already given away the three Pokémon (Bulbasaur, Charmander, and Squirtle) he entrusts to new Pokémon Trainers when Ash finally reaches Oak's Lab.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="jc.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="z-index: 120;">
+                <h1 style="color: bisque;">Jujutsu Kaisen</h1>
+                <p>Yuji Itadori is an unnaturally fit high school student living in Sendai. On his deathbed, his grandfather instils two powerful messages within Yuji: "always help others" and "die surrounded by people." Yuji's friends at the Occult Club attracted Curses to their school when they unsealed a rotten finger talisman which Yuji swallowed to protect Megumi Fushiguro and their friends, becoming host to a powerful Curse named Ryomen Sukuna.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="aot.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block" style="z-index: 120;">
+                <h1 style="color: bisque;">Attack On TITAN</h1>
+                <p>Eren Yeager is a boy who lives in the town of Shiganshina, located on the outermost of three circular walls protecting their inhabitants from Titans. In the year 845, the first wall (Wall Maria) is breached by two new types of Titans, the Colossal Titan and the Armored Titan. During the incident, Eren's mother is eaten by a Smiling Titan while Eren escapes. He swears revenge on all Titans and enlists in the military along with his adopted sister Mikasa Ackerman and his best friend Armin Arlert.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+      <!-- ///////////////lable free show ////////////// -->
+
+      <div class="labal">
+        <img class="img-responsive" src="labgoku.png" style="margin-left: 320px; margin-top: 45px;">
+      </div>
+
+    <!-- /////////////Tranding title//////////// -->
+
+    <!--///////////// Cards /////////////-->
+    <div class="trending">
+      <h3 class="tras" style="color: greenyellow; padding-left: 30px;">Tranding</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-md-2 " style=" height: 16rem; margin-left: 37px; margin-top: 70px; background-color: red; z-index: 150; padding: 0; display: flex;">
+            <div style="width: 50px; height: 16rem; background-color: rgb(32, 31, 31); margin: 0; padding: 0;">
+              <div style="height: 14rem; width: 50px;">
+                <h4 class="rotate1">OnePiece</h4>
+              </div>
+              <div style="height: 2rem; width: 50px;">
+                <h4 style="text-align: center; color: rgb(44, 250, 72);">01</h4>
+              </div>
+            </div>
+            <div>
+              <img src="opi.jpg" height="256px" width="176px">
+            </div>
+          </div>
+          <div class="col-6 col-md-2 " style=" height: 16rem; margin-left: 37px; margin-top: 70px; background-color: red; z-index: 150; padding: 0; display: flex;">
+            <div style="width: 50px; height: 16rem; background-color: rgb(32, 31, 31); margin: 0; padding: 0;">
+              <div style="height: 14rem; width: 50px;">
+                <h4 class="rotate2">Chainsaw</h4>
+              </div>
+              <div style="height: 2rem; width: 50px;">
+                <h4 style="text-align: center; color: rgb(44, 250, 72);">02</h4>
+              </div>
+            </div>
+            <div>
+              <img src="chai.jpg" height="256px" width="176px">
+            </div>
+          </div>
+          <div class="col-6 col-md-2 " style=" height: 16rem; margin-left: 37px; margin-top: 70px; background-color: red; z-index: 150; padding: 0; display: flex;">
+            <div style="width: 50px; height: 16rem; background-color: rgb(32, 31, 31); margin: 0; padding: 0;">
+              <div style="height: 14rem; width: 50px;">
+                <h4 class="rotate3">Jojo's</h4>
+              </div>
+              <div style="height: 2rem; width: 50px;">
+                <h4 style="text-align: center; color: rgb(44, 250, 72);">03</h4>
+              </div>
+            </div>
+            <div>
+              <img src="jojo.jpg" height="256px" width="176px">
+            </div>
+          </div>
+          <div class="col-6 col-md-2 " style=" height: 16rem; margin-left: 37px; margin-top: 70px; background-color: red; z-index: 150; padding: 0; display: flex;">
+            <div style="width: 50px; height: 16rem; background-color: rgb(32, 31, 31); margin: 0; padding: 0;">
+              <div style="height: 14rem; width: 50px;">
+                <h4 class="rotate4">Dragon</h4>
+              </div>
+              <div style="height: 2rem; width: 50px;">
+                <h4 style="text-align: center; color: rgb(44, 250, 72);">04</h4>
+              </div>
+            </div>
+            <div>
+              <img src="drag.jpg" height="256px" width="176px">
+            </div>
+          </div>
+          <div class="col-6 col-md-2 " style=" height: 16rem; margin-left: 37px; margin-top: 70px; background-color: red; z-index: 150; padding: 0; display: flex;">
+            <div style="width: 50px; height: 16rem; background-color: rgb(32, 31, 31); margin: 0; padding: 0;">
+              <div style="height: 14rem; width: 50px;">
+                <h4 class="rotate5">Blue</h4>
+              </div>
+              <div style="height: 2rem; width: 50px;">
+                <h4 style="text-align: center; color: rgb(44, 250, 72);">05</h4>
+              </div>
+            </div>
+            <div>
+              <img src="blue.png" height="256px" width="176px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ///////////emojis//////////////// -->
+    <div class="emoji">
+        <img src="xmas.gif" style="border-radius: 40px; height: 80px; margin-top: 10px; margin-left: 20px; z-index: 200;">
+        <li style=" z-index: 200; position: relative;">
+        <p style="margin-left: 25px; margin-top: 0px; color: rgb(44, 250, 72); font-weight: bold;">Share Zone</p>
+        <p style="margin-left: 25px; margin-top: -15px; color: rgb(255, 255, 255);">to your friends</p>
+        </li>
+        <a href="#" role="button" tabindex="0" style="color: white; background-color:rgb(59, 89, 152); border-radius: 14px; margin-left: 15px; margin-top: 30px; margin-bottom: 30px; width: 100px; padding: 6px; padding-left: 15px; z-index: 240px; position: relative;">Facebook</a>
+        <a href="#" role="button" tabindex="0" style="color: white; background-color:rgb(29, 161, 242); border-radius: 14px; margin-left: 5px; margin-top: 30px; margin-bottom: 30px; width: 90px; padding: 6px; padding-left: 20px;">Twitter</a>
+        <a href="#" role="button" tabindex="0" style="color: white; background-color:rgb(255, 87, 0); border-radius: 14px; margin-left: 5px; margin-top: 30px; margin-bottom: 30px; width: 90px; padding: 6px; padding-left: 21px;">Reddit</a>
+        <a href="#" role="button" tabindex="0" style="color: white; background-color:rgb(0, 136, 204); border-radius: 14px; margin-left: 5px; margin-top: 30px; margin-bottom: 30px; width: 100px; padding: 6px; padding-left: 18px;">Telegram</a>
+        <a href="#" role="button" tabindex="0" style="color: white; background-color:rgb(255, 101, 80); border-radius: 14px; margin-left: 5px; margin-top: 30px; margin-bottom: 30px; width: 120px; padding: 6px; padding-left: 22px;">More 100k</a>
+    </div>
+
+    <!-- /////////below Carousal////////// -->
+    <div class="main2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-md-4 ">
+            <img class="mt-5" src="ZoroImg.png" alt="Card image cap" height="393px" style="position: absolute;">
+          </div>
+          <div class="col-6 col-md-2 card  bg-secondary"  style=" height: 16rem; margin-top: 90px;">
+            <div class="card-body p-0">
+              <h2>Upcoming Anime</h2>
+              <p>For being Updated about the upcoming Animes and latest Movies login to our website</p>
+              <a href="#" class="btn btn-dark ml-4">Click Here ----></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 card bg-secondary ml-5"  style=" height: 16rem; margin-top: 90px;">
+            <div class="card-body p-0">
+              <h2>Featuring</h2>
+              <p>You can Watch All Animes And Movies immedietly After the get Aired, so keep in touch with our Community</p>
+              <a href="#" class="btn btn-dark ml-4 mt-2">Click Here ----></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 card bg-secondary ml-5"  style=" height: 16rem; margin-top: 90px;">
+            <div class="card-body p-0">
+              <h2>Latest Episodes</h2>
+              <p>For being the first to Watch the latest Episodes of All your favorite Anime, Keep in touch with us</p>
+              <a href="#" class="btn btn-dark ml-4">Click Here ----></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ////////////////gif/////////////////////// -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12" style="background-color: rgb(39, 44, 51);">
+    <div class="newgif">
+      <img src="labgif.gif" style="width: 729px; height: 90px; margin-left: 310px; margin-top: 39px;">
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- //////////////top-Airing/////////////////// -->
+    <div class="topA">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-md-3">
+            <div class="air" style="height: 500px; width: 310px;margin-top: 15px; background-color: aqua;">
+              <div style="width: 310px; height: 50px; background-color: rgba(50, 46, 55);">
+                <h5 style="padding: 10px; color: rgb(113, 209, 35);">Top Airing</h5>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgba(50, 46, 55); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgba(50, 46, 55); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div id="main3Div" style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="air" style="height: 500px; width: 310px;margin-top: 15px; background-color: aqua;">
+              <div style="width: 310px; height: 50px; background-color: rgba(50, 46, 55);">
+                <h5 style="padding: 10px; color: rgb(113, 209, 35);">Most Popular</h5>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgba(50, 46, 55); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgba(50, 46, 55); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="air" style="height: 500px; width: 310px;margin-top: 15px; background-color: aqua;">
+              <div style="width: 310px; height: 50px; background-color: rgba(50, 46, 55);">
+                <h5 style="padding: 10px; color: rgb(113, 209, 35);">Most Favorite</h5>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgba(50, 46, 55); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgba(50, 46, 55); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="air" style="height: 500px; width: 310px;margin-top: 15px; background-color: aqua;">
+              <div style="width: 310px; height: 50px; background-color: rgba(50, 46, 55);">
+                <h5 style="padding: 10px; color: rgb(113, 209, 35);">Compleated</h5>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgba(50, 46, 55); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgba(50, 46, 55); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+              <div style="width: 310px; height: 90px; background-color: rgb(40, 37, 43); display: flex;">
+                <div style="width: 80px; height: 90px;">
+                  <img src="bleachdemo.jpg" height="90px" width="65px" style="padding: 12px 9px 12px;">
+                </div>
+                <div style="width: 230px; height: 90px;">
+                  <p style="color: white; padding-top: 15px;">i am hero</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- ///////////////title///////////////////////// -->
+    <div class="main3" >
+      <h3 style="background: rgb(39, 44, 51); color:greenyellow; margin-bottom: 0; height: 60px; width: 100%; padding-left: 30px;padding-top: 20px;">Latest Episodes</h3>
+    </div>
+    <!-- ///////////////main4 class//////////////////// -->
+
+    <div class="main4" id="main4Div">
+      <div class="container-fluid">
+        <div id="mainVideoDiv" class="row" style="padding: 0px; margin: 0px;">
+          <Div class="col"><iframe class="embed-responsive-item" id="videoDiv" width="270" height="200" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></Div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- ///////////////After main2 class////////////// -->
+    <!-- <div class="main3">
+      <h1 style="height: 100px; width: 100%;">hero</h1>
+    </div> -->
+    <!-- ///////////////main5 class//////////////// -->
+    <div class="main5">
+      <div class="smain5">
+        <li class="flogo" >
+          <a href="#"><img id="logo" src="logo.png"></a>
+          <img src="line.png" style="height: 45px;">
+          <a class="navbar-brand" href="#"><img  id="logo1" src="1.png"></a>
+          <a class="navbar-brand" href="#"><img id="logo2" src="2.png"></a>
+          <a class="navbar-brand" href="#"><img id="logo3" src="3.png"></a>
+          <a class="navbar-brand" href="#"><img id="logo4" src="4.png"></a>
+        </li>
+        <hr style="height: 1px; background-color: rgba(107, 105, 105, 0.486); border: none; width: 370px; margin-left: 20px;"/>
+        <li class="flist">
+          <p style="color: white; font-weight: bold; margin-right: 10px;">A - Z LIST</p>
+          <img src="line.png" style="height: 30px;">
+          <p style="color: white; margin-left: 10px;">Searching Anime order by alphabet name A to Z</p>
+        </li>
+        <!-- <li class="alpha"> -->
+          <a href="#main3Div"><button onclick="getdata('famous anime epic scenes')" class="btn btn-secondary" id="btn1" >All</button></a>
+          <a href="#main3Div"><button onclick="getdata('latest anime official trailers')" class="btn btn-secondary" >#</button></a>
+          <a href="#main3Div"><button onclick="getdata('')" class="btn btn-secondary" >0-9</button></a>
+          <a href="#main3Div"><button onclick="getdata('Attack on titan epic scenes')" class="btn btn-secondary" >A</button></a>
+          <a href="#main3Div"><button onclick="getdata('Boruto epic scenes')" class="btn btn-secondary" >B</button></a>
+          <a href="#main3Div"><button onclick="getdata('Chainsaw man epic scenes')" class="btn btn-secondary" >C</button></a>
+          <a href="#main3Div"><button onclick="getdata('Demon slayer epic scenes')" class="btn btn-secondary" >D</button></a>
+          <a href="#main3Div"><button onclick="getdata('Edens zero anime epic scenes')" class="btn btn-secondary" >E</button></a>
+          <a href="#main3Div"><button onclick="getdata('Fire force anime epic scenes')" class="btn btn-secondary" >F</button></a>
+          <a href="#main3Div"><button onclick="getdata('Galaxy Devastator anime epic scenes')" class="btn btn-secondary" >G</button></a>
+          <a href="#main3Div"><button onclick="getdata('Hajime no ippo epic scenes')" class="btn btn-secondary" >H</button></a>
+          <a href="#main3Div"><button onclick="getdata('Iblard Jikan anime epic scenes')" class="btn btn-secondary" >I</button></a>
+          <a href="#main3Div"><button onclick="getdata('JoJos Bizarre Adventure all season epic scenes')" class="btn btn-secondary" >J</button></a>
+          <a href="#main3Div"><button onclick="getdata('K: Return of Kings anime epic scenes')" class="btn btn-secondary" >K</button></a>
+          <a href="#main3Div"><button onclick="getdata('Legendary Twins anime epic scenes')" class="btn btn-secondary" >L</button></a>
+          <a href="#main3Div"><button onclick="getdata('My Hero Academia epic scenes')" class="btn btn-secondary" >M</button></a>
+          <a href="#main3Div"><button onclick="getdata('Naruto all epic scenes')" class="btn btn-secondary" >N</button></a>
+          <a href="#main3Div"><button onclick="getdata('One piece epic scenes')" class="btn btn-secondary" >O</button></a>
+          <a href="#main3Div"><button onclick="getdata('pokemon all epic scenes')" class="btn btn-secondary" >P</button></a>
+          <a href="#main3Div"><button onclick="getdata('Quanzhi Fashi 5th Season anime epic scenes')" class="btn btn-secondary" >Q</button></a>
+          <a href="#main3Div"><button onclick="getdata('Rocky Joe 2 anime epic scenes')" class="btn btn-secondary" >R</button></a>
+          <a href="#main3Div"><button onclick="getdata('Scumbag System anime all epic scenes')" class="btn btn-secondary" >S</button></a>
+          <a href="#main3Div"><button onclick="getdata('tokyo ghoul epic scenes')" class="btn btn-secondary" >T</button></a>
+          <a href="#main3Div"><button onclick="getdata('Ultraman anime all epic scenes')" class="btn btn-secondary" >U</button></a>
+          <a href="#main3Div"><button onclick="getdata('Vermeil in Gold all epic scenes')" class="btn btn-secondary" >V</button></a>
+          <a href="#main3Div"><button onclick="getdata('Word of Honor anime all epic scenes')" class="btn btn-secondary" >W</button></a>
+          <a href="#main3Div"><button onclick="getdata('Xue Ying Ling Zhu anime all epic scenes')" class="btn btn-secondary" >X</button></a>
+          <a href="#main3Div"><button onclick="getdata('Youre Under Arrest: Fast & Furious anime all epic scenes')" class="btn btn-secondary" >Y</button></a>
+          <a href="#main3Div"><button onclick="getdata('Zetman anime all epic scenes')" class="btn btn-secondary" >Z</button></a>
+        <!-- </li> -->
+        <li class="cont ">
+          <p><small>Terms of Service</small></p>
+          <p class="ml-5"><small>DMCA</small></p>
+          <p class="ml-5"><small>Contact</small></p>
+        </li>
+        <p class="last"><small>Zoro does not store any files on our server, we only linked to the media which is hosted on 3rd party services.</small></p>
+        <p class="last1"><small>@Zoro.to</small></p>
+      </div>
+    </div>
+
+<script src="first.js"></script>
+
+</body>
+</html>
